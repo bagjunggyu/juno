@@ -1,7 +1,7 @@
 ### elementary OS 5.0 Juno ###
 
 #!/bin/bash
-### 시스템 업그레이드 및 앱 설치
+### 시스템 업데이트 및 앱 설치
 sudo apt-get update
 sudo apt-get dist-upgrade -y;
 sudo apt-get install clementine firefox firefox-locale-ko mpv tilda dconf-editor -y
