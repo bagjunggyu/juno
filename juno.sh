@@ -3,7 +3,7 @@
 #!/bin/bash
 sudo apt-get update
 sudo apt-get dist-upgrade -y;
-sudo apt-get install clementine software-properties-common firefox firefox-locale-ko mpv tilda dconf-editor -y
+sudo apt-get install clementine firefox firefox-locale-ko mpv tilda dconf-editor -y
 sudo apt-get autoremove epiphany-browser -y
 gsettings set org.gnome.desktop.wm.keybindings close ["'<Super>q'"]
 gsettings set org.gnome.settings-daemon.plugins.media-keys play "'F5'"
