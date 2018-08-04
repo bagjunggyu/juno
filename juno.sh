@@ -4,7 +4,7 @@
 ### 시스템 업데이트 및 앱 설치
 sudo apt-get update
 sudo apt-get dist-upgrade -y;
-sudo apt-get install clementine firefox firefox-locale-ko moc flashplugin-downloader mpv tilda dconf-editor -y
+sudo apt-get install clementine moc firefox firefox-locale-ko moc flashplugin-downloader mpv tilda dconf-editor -y
 sudo apt-get autoremove epiphany-browser -y
 ### 창 닫기
 gsettings set org.gnome.desktop.wm.keybindings close ["'<Super>q'"]
