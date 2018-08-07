@@ -8,6 +8,8 @@ sudo apt-get install clementine moc firefox firefox-locale-ko flashplugin-downlo
 sudo apt-get autoremove epiphany-browser -y
 ### 창 닫기
 gsettings set org.gnome.desktop.wm.keybindings close ["'<Super>q'"]
+### 최대 화면 토글
+gsettings set org.gnome.desktop.wm.keybindings toggle-maximized ['<Super>w']
 ### 음악 재생
 gsettings set org.gnome.settings-daemon.plugins.media-keys play "'F5'"
 ### 이전 트랙
