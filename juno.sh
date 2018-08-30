@@ -2,9 +2,12 @@
 
 #!/bin/bash
 ### 시스템 업데이트 및 앱 설치
+sudo sed -i 's/juno/bionic/g' /etc/apt/sources.list.d/elementary.list /etc/apt/sources.list.d/patches.list /etc/apt/sources.list.d/appcenter.list
 sudo apt-get update
 sudo apt-get dist-upgrade -y;
-sudo apt-get install clementine moc firefox firefox-locale-ko flashplugin-downloader mpv tilda dconf-editor -y
+sudo apt-get install software-properties-common clementine moc firefox firefox-locale-ko flashplugin-downloader mpv tilda dconf-editor -y
+sudo apt-add-repository ppa:hodong/nimf -y
+sudo apt-get install nimf nimf-libhangul -y
 sudo apt-get autoremove epiphany-browser -y
 ### 창 닫기
 gsettings set org.gnome.desktop.wm.keybindings close ["'<Super>q'"]
@@ -28,6 +31,8 @@ gsettings set org.pantheon.desktop.gala.behavior overlay-action "'wingpanel --to
 ### apt 한글 명령어 alis
 cd && wget https://github.com/bagjunggyu/alias/archive/master.zip
 unzip master.zip && mv ~/alias-master/.bash_aliases . && rm master.zip && rm -r ~/alias-master
+### 입력기 nimf로 지정
+im-config -n nimf
 ### 정리 및 다시 시작
 sudo apt-get autoremove --purge -y
 sudo rm juno.sh
