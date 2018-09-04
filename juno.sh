@@ -5,7 +5,7 @@
 sudo sed -i 's/juno/bionic/g' /etc/apt/sources.list.d/elementary.list /etc/apt/sources.list.d/patches.list /etc/apt/sources.list.d/appcenter.list
 sudo apt-get update
 sudo apt-get dist-upgrade -y;
-sudo apt-get install software-properties-common clementine moc firefox firefox-locale-ko flashplugin-downloader mpv tilda dconf-editor -y
+sudo apt-get install software-properties-common clementine moc firefox firefox-locale-ko flashplugin-downloader mpv tilda -y
 sudo apt-add-repository ppa:hodong/nimf -y
 sudo apt-get install nimf nimf-libhangul -y
 sudo apt-get autoremove epiphany-browser -y
